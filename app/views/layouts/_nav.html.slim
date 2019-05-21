@@ -1,0 +1,17 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand href="#"  MM
+  button.navbar-toggler aria-controls="navbarColor02" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarColor02" data-toggle="collapse" type="button" 
+    span.navbar-toggler-icon
+  #navbarColor02.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item
+        = link_to 'Posts', posts_path, class: "nav-link"
+      li.nav-item
+        a.nav-link href="#"  Features
+      li.nav-item
+        a.nav-link href="#"  Pricing
+      li.nav-item
+        a.nav-link href="#"  About
+    form.form-inline.my-2.my-lg-0
+      input.form-control.mr-sm-2 placeholder="Search" type="text" /
+      button.btn.btn-secondary.my-2.my-sm-0 type="submit"  Search
