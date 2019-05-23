@@ -21,11 +21,10 @@ class PostsController < ApplicationController
   def edit
   end
 
-  # POST /posts
-  # POST /posts.json
+  
   def create
     @post = Post.new(post_params)
-
+    @post.user = User.first
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
