@@ -16,6 +16,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
       input.form-control.mr-sm-2 placeholder="Search" type="text" /
       button.btn.btn-secondary.my-2.my-sm-0 type="submit"  Search
     - if user_signed_in?
+      | Hello, #{current_user.username}
       = link_to '👩🏼Logout', destroy_user_session_path, method: :delete, class: 'btn btn-link'
     - else
       = link_to '👩🏼‍💻Login', new_user_session_path, class: 'btn btn-link'
