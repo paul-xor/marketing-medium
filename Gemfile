@@ -46,7 +46,7 @@ gem 'simple_form'
 # gem 'bootstrap-kaminari-views'
 gem 'draper', github: 'drapergem/draper'
 gem 'devise'
-gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'carrierwave', '~> 1.3'
 gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 gem 'ckeditor'
 
